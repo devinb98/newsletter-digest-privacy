@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Newsletter Digest — Privacy Policy</title>
+  <style>
+    body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+           font: 16px/1.6 -apple-system, system-ui, sans-serif; color: #1a1a1a; }
+    h1 { font-size: 1.6rem; } h2 { font-size: 1.15rem; margin-top: 2rem; }
+    code { background: #f2f2f2; padding: 0 .3em; border-radius: 3px; }
+    .meta { color: #666; font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <h1>Newsletter Digest — Privacy Policy</h1>
+  <p class="meta">Last updated: October 8, 2026</p>
+
+  <p>
+    Newsletter Digest ("the app") is a personal, single-user script that
+    summarizes email newsletters. It is operated by an individual for their
+    own use and is not a commercial product. This policy explains what data
+    the app accesses and how it is used.
+  </p>
+
+  <h2>What the app accesses</h2>
+  <p>
+    Using the Gmail API, the app reads messages in the account owner's own
+    Gmail inbox that come from a short, hard-coded list of newsletter sender
+    addresses. It also uses permission to send email in order to deliver the
+    finished digest back to that same account. The app does not read, index,
+    or store any other messages in the inbox.
+  </p>
+
+  <h2>How the data is used</h2>
+  <p>
+    The text of those newsletter emails is sent to Anthropic's Claude API,
+    which generates a summarized digest. The digest is then emailed back to
+    the account owner's own inbox. The app has no other purpose and performs
+    no other action with the data.
+  </p>
+
+  <h2>Third parties</h2>
+  <ul>
+    <li><strong>Google (Gmail API)</strong> — to read the newsletter emails and send the digest.</li>
+    <li><strong>Anthropic (Claude API)</strong> — to summarize the newsletter content. Content sent to Anthropic is handled under Anthropic's own privacy and data-use terms.</li>
+  </ul>
+  <p>
+    The app does not sell, rent, or share data with any other party, and does
+    not use the data for advertising or profiling.
+  </p>
+
+  <h2>Storage and retention</h2>
+  <p>
+    The app runs locally on the owner's own computer. A Google OAuth token is
+    stored locally in a file named <code>token.json</code> so the app can run
+    on a schedule without re-authorizing each time. Newsletter content and
+    generated digests are not retained by the app beyond the run that produces
+    them; the digest lives only in the owner's own email inbox. There is no
+    central server and no database.
+  </p>
+
+  <h2>Limited use</h2>
+  <p>
+    The app's use of information received from Google APIs adheres to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+    including the Limited Use requirements.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this policy can be directed to the app owner at
+    the contact email associated with this project.
+  </p>
+</body>
+</html>
